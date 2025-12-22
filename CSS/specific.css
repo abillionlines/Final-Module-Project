@@ -1,0 +1,85 @@
+ul li {
+  display: flex;
+  list-style: none;
+  font-size: clamp(0.3rem, 1vw, 1.3em);
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgba(156, 156, 156, 1);
+  opacity: 30%;
+}
+
+.cover__top--navigation ul {
+  display: flex;
+
+  flex-direction: row;
+  gap: 8%;
+  text-wrap: nowrap;
+}
+
+.socialLinks img {
+  height: 18px;
+}
+
+.socialLinks ul {
+  display: flex;
+  gap: 25px;
+}
+
+.socialLinks a {
+  display: flex;
+  align-self: center;
+}
+
+.profilePicture img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+.headerText button {
+  width: 307px;
+  height: 63px;
+  background-color: #3f8e00;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: bold;
+  color: #ffffff;
+  border: 1px;
+  border-radius: 4px;
+}
+
+.headerText h1 {
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: 800;
+}
+
+.headerText p {
+  line-height: 24px;
+  letter-spacing: 1%;
+}
+
+.workedWith {
+  color: #ffffff;
+  margin-left: 180px;
+  position: relative;
+  bottom: 30px;
+  opacity: 40%;
+}
+
+.workedWithImages img {
+  height: 60px;
+  width: 80px;
+  position: relative;
+  color: #ffffff;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  bottom: 20px;
+  opacity: 20%;
+}
+
+.workedWithImages .uber {
+  padding: 0px;
+}
