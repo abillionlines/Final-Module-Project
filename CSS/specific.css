@@ -1,18 +1,17 @@
 ul li {
   display: flex;
   list-style: none;
-  font-size: clamp(0.3rem, 1vw, 1.3em);
+  font-size: 1.1vw;
 }
 
 ul li a {
   text-decoration: none;
   color: rgba(156, 156, 156, 1);
-  opacity: 30%;
+  opacity: 40%;
 }
 
 .cover__top--navigation ul {
   display: flex;
-
   flex-direction: row;
   gap: 8%;
   text-wrap: nowrap;
@@ -33,16 +32,16 @@ ul li a {
 }
 
 .profilePicture img {
-  width: 350px;
-  height: 350px;
+  width: 27vw;
+  height: auto;
   border-radius: 50%;
 }
 
 .headerText button {
-  width: 307px;
-  height: 63px;
+  width: 24vw;
+  height: 5vw;
   background-color: #3f8e00;
-  font-size: 16px;
+  font-size: 1.25vw;
   font-weight: 700;
   font-style: bold;
   color: #ffffff;
@@ -52,32 +51,35 @@ ul li a {
 
 .headerText h1 {
   color: #ffffff;
-  font-size: 44px;
+  font-size: 3.43vw;
   font-weight: 800;
+  margin-bottom: 10px;
 }
 
 .headerText p {
-  line-height: 24px;
+  line-height: 1.8vw;
+  font-size: 1.1vw;
   letter-spacing: 1%;
 }
 
 .workedWith {
   color: #ffffff;
-  margin-left: 180px;
-  position: relative;
-  bottom: 30px;
+
+  position: absolute;
+  bottom: 20%;
+  left: 14.5%;
   opacity: 40%;
 }
 
 .workedWithImages img {
-  height: 60px;
-  width: 80px;
+  height: 7vw;
+  width: 7vw;
   position: relative;
   color: #ffffff;
   border: 3px solid rgba(255, 255, 255, 0.2);
   padding: 10px;
   bottom: 20px;
-  opacity: 20%;
+  opacity: 30%;
 }
 
 .workedWithImages .uber {
