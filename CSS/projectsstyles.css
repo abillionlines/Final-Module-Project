@@ -1,0 +1,101 @@
+.projects {
+  display: block;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 70%;
+  height: 1242px;
+  padding: 80px 0 80px 0;
+}
+
+.project1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.project1 button {
+  background-color: #ffa217;
+}
+
+.projects p {
+  width: 85%;
+}
+
+.project2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 80px 0;
+}
+
+.project2 button {
+  background-color: #000aff;
+}
+
+.project2 .projectinfo {
+  padding-left: 30px;
+}
+
+.project3 {
+  display: flex;
+  flex-direction: row;
+  margin: 80px 0;
+}
+
+.project3 button {
+  background-color: #2ab090;
+}
+
+.nameIntroText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  gap: 10px;
+  text-align: center;
+  width: 63.5%;
+  margin-bottom: 60px;
+}
+
+.projectinfo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.projectinfo h3 {
+  color: #ffa217;
+  width: 100px;
+  text-align: center;
+  background-color: #fff6e9;
+  font-size: 12px;
+  border-radius: 100px;
+  display: inline;
+  padding: 3px 10px;
+}
+
+.projectinfo button {
+  height: 35px;
+  width: 180px;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 8px 30px 0 rgba(42, 176, 144, 0.1);
+}
+
+.imgContainer {
+  display: flex;
+  width: 50%;
+  height: 23.44vw;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.imgContainer img {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+}
