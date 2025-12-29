@@ -34,7 +34,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
+  max-height: 280px;
   margin: 95px auto;
 }
 
