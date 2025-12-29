@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/CSS/headerstyles.css" />
     <link rel="stylesheet" href="CSS/projectsstyles.css" />
     <link rel="stylesheet" href="CSS/testimonystyles.css" />
+    <link rel="stylesheet" href="CSS/recentwork.css" />
+    <link rel="stylesheet" href="CSS/footerstyles.css" />
     <title>Document</title>
   </head>
   <body>
@@ -86,9 +88,10 @@
           possimus eveniet.
         </p>
       </div>
-      <div class="project1">
+      <div class="project1" id="projectcontainer">
         <div class="projectinfo">
           <h3>Healthcare</h3>
+          <h2>Project Name Here</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
             accusantium maxime repellat ab modi aliquid ipsa, vel aut ratione
@@ -101,9 +104,10 @@
           <img src="assets/backporch.jpeg" />
         </div>
       </div>
-      <div class="project2">
+      <div class="project2" id="projectcontainer">
         <div class="projectinfo">
           <h3>Healthcare</h3>
+          <h2>Project Name Here</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
             laboriosam quasi porro itaque accusantium deleniti cum alias dolore,
@@ -116,9 +120,10 @@
           <img src="assets/downtown.jpeg" />
         </div>
       </div>
-      <div class="project3">
+      <div class="project3" id="projectcontainer">
         <div class="projectinfo">
           <h3>Healthcare</h3>
+          <h2>Project Name Here</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem,
             repellat cumque! Facilis minima placeat expedita accusantium totam
@@ -196,7 +201,74 @@
         </div>
       </div>
     </section>
+    <section class="recentWork">
+      <div class="recentWorkIntro">
+        <h1>Recent Work</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vitae
+          repudiandae qui quidem quo ipsa? Placeat dolores veritatis ad
+          repellendus?
+        </p>
+      </div>
+      <div class="recentWorks">
+        <div class="works">
+          <div class="workImgContainer">
+            <img src="assets/brianwork2.jpeg" />
+          </div>
+          <h2>Work Name Here</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            accusantium exercitationem consequuntur at. Molestiae, accusamus.
+          </p>
+          <button>Know more &nbsp&nbsp&nbsp></button>
+        </div>
+        <div class="works">
+          <div class="workImgContainer">
+            <img src="assets/brianwork1.jpeg" />
+          </div>
+          <h2>Work Name Here</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            accusantium exercitationem consequuntur at. Molestiae, accusamus.
+          </p>
+          <button>Know more &nbsp&nbsp&nbsp></button>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="contactIntro">
+        <h1>Get In Touch</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          minus vitae sequi rem ut molestias ratione corrupti impedit,
+          perspiciatis aliquid.
+        </p>
+      </div>
+      <div class="contactForm">
+        <form class="contactInputs" method="POST">
+          <div class="contact-name">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Your Full Name" />
+          </div>
+          <div class="contact-email">
+            <label for="email">Email</label>
+            <input type="email" placeholder="jane@doe.com" />
+          </div>
+          <div class="contact-mobile">
+            <label for="mobile">Mobile</label>
+            <input type="tel" placeholder="555-555-5555" />
+          </div>
+          <div class="contact-message">
+            <label for="message">Message</label>
+            <textarea placeholder="Write your message here..."></textarea>
+          </div>
+          <button type="submit">Send Message &nbsp&nbsp&nbsp></button>
+        </form>
+      </div>
+    </section>
 
-    <footer></footer>
+    <footer>
+      <p class="footer-text">Made with &#128170;</p>
+    </footer>
   </body>
 </html>

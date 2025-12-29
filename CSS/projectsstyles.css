@@ -6,7 +6,7 @@
   justify-content: center;
   position: relative;
   width: 70%;
-
+  gap: 80px;
   padding: 80px 0 80px 0;
 }
 
@@ -26,7 +26,6 @@
 .project2 {
   display: flex;
   flex-direction: row-reverse;
-  margin: 80px 0;
 }
 
 .project2 button {
@@ -40,7 +39,6 @@
 .project3 {
   display: flex;
   flex-direction: row;
-  margin: 80px 0;
 }
 
 .project3 button {
@@ -62,7 +60,10 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  justify-content: space-between;
+  gap: 30px;
+}
+#projectcontainer {
+  align-items: center;
 }
 
 .projectinfo h3 {
@@ -91,11 +92,12 @@
   width: 50%;
   height: 23.44vw;
   align-items: center;
+
   justify-content: center;
   overflow: hidden;
 }
 .imgContainer img {
-  width: 400px;
-  height: auto;
+  width: 100%;
+
   object-fit: cover;
 }
