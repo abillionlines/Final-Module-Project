@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="CSS/base.css" />
     <link rel="stylesheet" href="/CSS/headerstyles.css" />
     <link rel="stylesheet" href="CSS/projectsstyles.css" />
@@ -11,10 +18,11 @@
     <link rel="stylesheet" href="CSS/footerstyles.css" />
     <title>Document</title>
   </head>
+
   <body>
     <header class="cover">
       <div class="cover__top">
-        <div class="cover__top--navigation">
+        <div class="coverTopNav" id="menu">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Projects</a></li>
@@ -46,6 +54,7 @@
             </li>
           </ul>
         </div>
+        <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
       </div>
 
       <div class="nameAndPhoto">
@@ -71,11 +80,11 @@
         <p>Worked with</p>
       </div>
       <div class="workedWithImages">
-        <img src="assets/reddit.svg" alt="Reddit Logo" />
-        <img src="assets/github.svg" alt="Github logo" />
-        <img src="assets/netflix.svg" alt="Netflix logo" />
-        <img class="uber" src="assets/uber.svg" alt="Uber logo" />
-        <img src="assets/airbnb.svg" alt="airbnb" />
+        <img src="assets/reddit.svg" alt="Reddit Logo" alt="1" />
+        <img src="assets/github.svg" alt="Github logo" alt="2" />
+        <img src="assets/netflix.svg" alt="Netflix logo" alt="3" />
+        <img class="uber" src="assets/uber.svg" alt="Uber logo" alt="4" />
+        <img src="assets/airbnb.svg" alt="airbnb" alt="5" />
       </div>
     </header>
     <section class="projects">
@@ -270,5 +279,11 @@
     <footer>
       <p class="footer-text">Made with &#128170;</p>
     </footer>
+    <script>
+      function toggleMenu() {
+        const coverTopNav = document.getElementById("menu");
+        menu.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

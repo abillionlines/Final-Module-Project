@@ -58,3 +58,18 @@
   align-items: center;
   gap: 20px;
 }
+
+@media only screen and (max-width: 425px) {
+  .testimonycontainer {
+    grid-template-columns: none;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .testTitleIntro p {
+    width: 80%;
+  }
+
+  .testimonytext {
+    font-size: small;
+  }
+}

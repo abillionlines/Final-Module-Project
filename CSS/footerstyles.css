@@ -78,3 +78,13 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+@media only screen and (max-width: 425px) {
+  .contactForm {
+    width: 80%;
+  }
+
+  .contactIntro p {
+    width: 80%;
+  }
+}

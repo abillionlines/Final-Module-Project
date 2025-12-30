@@ -101,3 +101,43 @@
 
   object-fit: cover;
 }
+
+@media only screen and (max-width: 425px) {
+  .projects {
+    width: 100%;
+    padding: 50px 0 30px 0;
+  }
+  .projectinfo h3 {
+    display: none;
+  }
+
+  .projectinfo {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #projectcontainer {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .project2 .projectinfo {
+    padding-left: 0;
+  }
+
+  .imgContainer {
+    width: 80%;
+    height: 60vw;
+  }
+
+  .nameIntroText {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}

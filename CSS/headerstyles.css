@@ -1,8 +1,9 @@
 header {
   display: block;
   margin: 0 auto;
+
   width: 100%;
-  height: 700px;
+  height: 55vw;
   background-color: rgba(8, 8, 8, 1);
   position: relative;
 }
@@ -19,7 +20,11 @@ header {
   background-color: rgba(27, 27, 27, 1);
 }
 
-.cover__top--navigation {
+.menu-toggle {
+  display: none;
+}
+
+.coverTopNav {
   display: flex;
   padding-left: 8.6%;
 }
@@ -31,11 +36,13 @@ header {
 
 .nameAndPhoto {
   display: flex;
+  margin: 0 auto;
   flex-direction: row;
   align-items: center;
+
   justify-content: center;
   max-height: 280px;
-  margin: 95px auto;
+  margin-top: 10vw;
 }
 
 .headerText {
@@ -44,7 +51,7 @@ header {
 
   justify-content: center;
   width: 42vw;
-  height: 35vh;
+
   color: rgba(156, 156, 156);
   gap: 30px;
 }
@@ -85,7 +92,7 @@ ul li a {
   opacity: 40%;
 }
 
-.cover__top--navigation ul {
+.coverTopNav ul {
   display: flex;
   flex-direction: row;
   gap: 8%;
@@ -139,7 +146,7 @@ ul li a {
 
 .workedWith {
   color: #ffffff;
-
+  font-size: 1.6vw;
   position: absolute;
   bottom: 20%;
   left: 14.5%;
@@ -159,4 +166,125 @@ ul li a {
 
 .workedWithImages .uber {
   padding: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 100vw;
+  }
+
+  .headerText {
+    align-items: center;
+  }
+  .nameAndPhoto {
+    margin-top: 15vw;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .workedWithImages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7%;
+    justify-content: center;
+  }
+  .workedWith {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  header {
+    height: 140vw;
+  }
+  .headerText button {
+    height: 25px;
+  }
+
+  .coverTopNav {
+    display: none;
+    position: absolute;
+    padding-left: 0px;
+    width: 80%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: whitesmoke;
+    justify-content: center;
+    opacity: 75%;
+  }
+
+  .coverTopNav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .coverTopNav li {
+    font-size: 20px;
+    color: black;
+    border: 1px solid black;
+    width: 100vw;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 0 55px 0 55px;
+  }
+
+  .coverTopNav a {
+    color: black;
+    opacity: 100%;
+  }
+
+  .workedWith {
+    display: none;
+    bottom: 15%;
+  }
+
+  .workedWithImages img {
+    padding: 2px;
+    opacity: 70%;
+  }
+
+  .headerTextBox {
+    width: 50vw;
+  }
+
+  .headerText h1 {
+    font-size: 5vw;
+    text-wrap: nowrap;
+    align-self: center;
+  }
+
+  .headerText p {
+    font-size: 2vw;
+    line-height: 2.5vw;
+    text-align: center;
+  }
+
+  .headerText button {
+    font-size: 2vw;
+  }
+
+  .profilePicture img {
+    width: 40vw;
+  }
+
+  .coverTopNav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: white;
+    font-size: 20px;
+    opacity: 50%;
+    padding-right: 6%;
+  }
+
+  .socialLinks {
+    padding-left: 6%;
+  }
 }

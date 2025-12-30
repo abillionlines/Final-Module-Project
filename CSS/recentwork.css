@@ -50,10 +50,41 @@
 
 .workImgContainer {
   width: 100%;
-  height: 250px;
+  height: 22vw;
   overflow: hidden;
 }
 
 .works img {
-  width: 500px;
+  width: 39vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .works {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .works button {
+    align-self: center;
+  }
+
+  .workImgContainer {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .works img {
+    width: 75vw;
+  }
+
+  .workImgContainer {
+    max-height: 175px;
+  }
+
+  .recentWorkIntro p {
+    width: 75%;
+  }
 }
