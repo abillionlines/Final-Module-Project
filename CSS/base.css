@@ -5,16 +5,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  display: flex;
 
+.html {
+  background-color: gray;
+}
+
+.site-wrapper {
+  max-width: 1440px;
   margin: 0 auto;
-  justify-content: center;
+
+  width: 100%;
+  box-sizing: border-box;
 }
 body {
   font-family: IBM PLex Mono;
   font-size: 14px;
-
+  background-color: grey;
   display: flex;
   flex-direction: column;
 

@@ -79,9 +79,19 @@ footer {
   justify-content: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .contactForm {
+    width: 50%;
+  }
+
+  .contactIntro p {
+    width: 60%;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .contactForm {
-    width: 80%;
+    width: 85%;
   }
 
   .contactIntro p {
